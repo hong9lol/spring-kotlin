@@ -1,4 +1,4 @@
-package com.hong9lol.Todo
+package com.hong9lol.todo
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

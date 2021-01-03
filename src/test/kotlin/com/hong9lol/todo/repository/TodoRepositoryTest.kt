@@ -1,7 +1,7 @@
-package com.hong9lol.Todo.repository
+package com.hong9lol.todo.repository
 
-import com.hong9lol.Todo.Database.Todo
-import com.hong9lol.Todo.config.AppConfig
+import com.hong9lol.todo.Database.Todo
+import com.hong9lol.todo.config.AppConfig
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

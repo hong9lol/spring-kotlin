@@ -1,4 +1,4 @@
-package com.hong9lol.Todo
+package com.hong9lol.todo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,6 +1,6 @@
-package com.hong9lol.Todo.Database
+package com.hong9lol.todo.Database
 
-import com.hong9lol.Todo.model.http.TodoDto
+import com.hong9lol.todo.model.http.TodoDto
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 

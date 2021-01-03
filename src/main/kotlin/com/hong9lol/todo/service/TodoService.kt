@@ -1,10 +1,10 @@
-package com.hong9lol.Todo.service
+package com.hong9lol.todo.service
 
-import com.hong9lol.Todo.Database.Todo
-import com.hong9lol.Todo.Database.convertTodo
-import com.hong9lol.Todo.model.http.TodoDto
-import com.hong9lol.Todo.model.http.convertTodoDto
-import com.hong9lol.Todo.repository.TodoRepositoryImpl
+import com.hong9lol.todo.Database.Todo
+import com.hong9lol.todo.Database.convertTodo
+import com.hong9lol.todo.model.http.TodoDto
+import com.hong9lol.todo.model.http.convertTodoDto
+import com.hong9lol.todo.repository.TodoRepositoryImpl
 import org.springframework.stereotype.Service
 
 /* when TodoDto <-> Todo converting find abd use below things

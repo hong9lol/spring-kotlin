@@ -1,13 +1,12 @@
-package com.hong9lol.Todo.handler
+package com.hong9lol.todo.handler
 
-import com.hong9lol.Todo.controller.api.todo.TodoApiController
+import com.hong9lol.todo.controller.api.todo.TodoApiController
 import org.springframework.web.bind.MethodArgumentNotValidException
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
 import javax.servlet.http.HttpServletRequest
-import com.hong9lol.Todo.model.http.Error
-import com.hong9lol.Todo.model.http.ErrorResponse
-import org.springframework.http.HttpMethod
+import com.hong9lol.todo.model.http.Error
+import com.hong9lol.todo.model.http.ErrorResponse
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.validation.FieldError

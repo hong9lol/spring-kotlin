@@ -1,20 +1,26 @@
-package com.hong9lol.Todo.controller.api.todo
+package com.hong9lol.todo.controller.api.todo
 
-import com.hong9lol.Todo.model.http.TodoDto
-import com.hong9lol.Todo.service.TodoService
-import org.springframework.http.HttpHeaders
+import com.hong9lol.todo.model.http.TodoDto
+import com.hong9lol.todo.service.TodoService
+import io.swagger.annotations.Api
+import io.swagger.annotations.ApiOperation
+import io.swagger.annotations.ApiParam
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
 
 //how to do redirection: ResponseEntity.status(HttpStatus.MOVED_PERMANENTLY).header(HttpHeaders.LOCATION, "URL_LINK").build()
+@Api(description = "일정 관리")
 @RestController
 @RequestMapping("/api/todo")
 class TodoApiController(val todoService: TodoService) {
     // R
+    @ApiOperation(value = "일정 확인", notes = "일정 확인 Get Api")
+    @ApiParam(name = "index")
     @GetMapping(path = [""])
-    fun read(@RequestParam(required = false) index: Int?): ResponseEntity<Any?> {
+    fun read(
+        @RequestParam(required = false) index: Int?): ResponseEntity<Any?> {
         if (index != null) {
             return todoService.read(index)?.let {
                 ResponseEntity.ok(it)

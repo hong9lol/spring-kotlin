@@ -1,11 +1,10 @@
-package com.hong9lol.Todo.repository
+package com.hong9lol.todo.repository
 
-import com.hong9lol.Todo.Database.Todo
-import com.hong9lol.Todo.Database.TodoDataBase
+import com.hong9lol.todo.Database.Todo
+import com.hong9lol.todo.Database.TodoDataBase
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import java.lang.Exception
-import java.time.LocalDate
 import java.time.LocalDateTime
 
 @Service

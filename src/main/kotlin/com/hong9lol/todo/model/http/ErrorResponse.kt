@@ -1,4 +1,4 @@
-package com.hong9lol.Todo.model.http
+package com.hong9lol.todo.model.http
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import java.time.LocalDateTime

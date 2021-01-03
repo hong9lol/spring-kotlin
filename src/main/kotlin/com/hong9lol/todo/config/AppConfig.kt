@@ -1,6 +1,6 @@
-package com.hong9lol.Todo.config
+package com.hong9lol.todo.config
 
-import com.hong9lol.Todo.Database.TodoDataBase
+import com.hong9lol.todo.Database.TodoDataBase
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 

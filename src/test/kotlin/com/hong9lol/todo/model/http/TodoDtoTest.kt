@@ -1,8 +1,7 @@
-package com.hong9lol.Todo.model.http
+package com.hong9lol.todo.model.http
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
-import org.springframework.validation.FieldError
 import javax.validation.Validation
 
 class TodoDtoTest {
