@@ -64,7 +64,12 @@ class TodoRepositoryImpl: TodoRepository {
     }
 
     override fun findOne(index: Int): Todo? {
-        return todoDataBase.todoList.first { it.index == index }
+        return try {
+            todoDataBase.todoList.first { it.index == index }
+        } catch(e: Exception) {
+            println(e.message)
+            null
+        }
     }
 
     override fun findAll(): MutableList<Todo> {
